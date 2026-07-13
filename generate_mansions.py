@@ -33,7 +33,7 @@ def generate_mansions_calendar():
     today = datetime.datetime.utcnow().date()
     
     # 90-day rolling window
-    for i in range(90):
+    for i in range(1800):
         current_date = today + datetime.timedelta(days=i)
         
         # Check the moon's position at noon to determine the dominant daily mansion
